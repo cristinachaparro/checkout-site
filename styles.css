@@ -1,0 +1,76 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+/* reset */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* body */
+
+.site {
+  margin-left: 240px;
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column wrap;
+  justify-content: center;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #4e5150;
+}
+
+label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4f4f4f;
+  transform: rotate(-0.02deg);
+}
+
+input {
+  width: 465px;
+  height: 56px;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  margin-top: 7px;
+  margin-bottom: 20px;
+}
+
+.info {
+  margin-top: 51px;
+}
+
+.title {
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  transform: rotate(-0.02deg);
+}
+
+.shipping-info {
+  margin-top: 58px;
+}

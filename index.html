@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Checkout Site</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="site">
+      <h1>Checkout</h1>
+      <div class="info">
+        <div class="contact-info">
+        <p class="title">Contact information</p>
+        <form>
+          <label for="email">E-mail:</label><br />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          /><br />
+          <label for="phone">Phone:</label><br />
+          <input
+            type="text"
+            id="phone"
+            name="phonenumber"
+            placeholder="Enter your phone"
+            required autocomplete="tel"
+          />
+        </div>
+        <div class="shipping-info">
+          <p class="title">Shipping address</p>
+          <label for="fname">Full name</label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fullname"
+            value="Rodney Cotton"
+          /><br />
+          <label for="address">Address</label><br />
+          <input
+            type="text"
+            id="address"
+            name="ship-address"
+            placeholder="Your address"
+            autocomplete="shipping street-address"
+          /><br />
+          <label for="city">City</label><br />
+          <input
+            type="text"
+            id="city"
+            name="ship-city"
+            placeholder="Your city"
+            autocomplete="shipping locality"
+          /><br />
+          <label for="country">Country</label><br />
+          <select id="country" name="ship-country">
+            <option value="Spain">Spain</option>
+            <option value="France">France</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Greece">Greece</option>
+          </select>
+          <label for="postal-code">Postal code</label>
+          <input
+            type="text"
+            id="postal-code"
+            name="ship-postal-code"
+            placeholder="Your postal code"
+            autocomplete="shipping postal-code"
+          />
+          <input type="checkbox" id="save-info" name="save-info" /><br />
+          <label for="save-info">Save this information for next time</label
+          ><br />
+        </form>
+        </div>
+        <button>Continue</button>
+      </div>
+      <div class="summary">
+        <div class="item1">
+          <img
+            src="photo1.png"
+            alt="Green vintage backpack with brown leather details."
+          />
+          <p>Vintage Backpack</p>
+          <p>$54.99 <strike>$94.99</strike></p>
+          <form>
+            <label for="quantity"></label>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="1"
+              max="5"
+              value="1"
+            />
+          </form>
+        </div>
+        <div class="item2">
+          <img src="photo2.png" alt="Denim shoes with brown sole." />
+          <p>Levi Shoes</p>
+          <p>$74.99 <strike>$124.99</strike></p>
+          <form>
+            <label for="quantity"></label>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="1"
+              max="5"
+              value="1"
+            />
+          </form>
+          <hr />
+        </div>
+        <div class="shopping-summary">
+          <table>
+            <tbody>
+              <tr>
+                <td>Shipping</td><br>
+                <td>$19</td>
+              </tr>
+              <hr>
+              <tr>
+                <td>Total</td><br>
+                <td>$148.98</td>
+              </tr>
+            </tbody>
+        </table>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+  <footer>Cristina Chaparro @ DevChallenges.io</footer>
+</html>
