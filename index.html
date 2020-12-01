@@ -12,130 +12,160 @@
     />
   </head>
   <body>
+    <h1>Checkout</h1>
     <div class="site">
-      <h1>Checkout</h1>
       <div class="info">
         <div class="contact-info">
         <p class="title">Contact information</p>
         <form>
           <label for="email">E-mail:</label><br />
-          <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-          /><br />
+          <div class="form-input">
+            <img class="input-icon"   src='./svg/email.svg' />
+            <input
+              class="textbox"
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+            /><br />
+          </div>
           <label for="phone">Phone:</label><br />
-          <input
-            type="text"
-            id="phone"
-            name="phonenumber"
-            placeholder="Enter your phone"
-            required autocomplete="tel"
-          />
+          <div class="form-input">
+            <img class="input-icon" src="./svg/phone.svg">
+              <input
+                class="textbox"
+                type="text"
+                id="phone"
+                name="phonenumber"
+                placeholder="Enter your phone"
+                required autocomplete="tel"
+              />
+          </img>
+          </div>
         </div>
         <div class="shipping-info">
           <p class="title">Shipping address</p>
           <label for="fname">Full name</label><br />
-          <input
-            type="text"
-            id="fname"
-            name="fullname"
-            value="Rodney Cotton"
-          /><br />
-          <label for="address">Address</label><br />
-          <input
-            type="text"
-            id="address"
-            name="ship-address"
-            placeholder="Your address"
-            autocomplete="shipping street-address"
-          /><br />
+          <div class="form-input">
+            <img src="./svg/user.svg" alt="user icon" class="input-icon">
+            <input
+              class="textbox"
+              type="text"
+              id="fname"
+              name="fullname"
+              value="Rodney Cotton"
+            /><br />
+          </div>
+          <label for="address">Address</label><br/>
+          <div class="form-input">
+            <img src="./svg/home.svg" alt="home icon" class="input-icon">
+            <input
+              class="textbox"
+              type="text"
+              id="address"
+              name="ship-address"
+              placeholder="Your address"
+              autocomplete="shipping street-address"
+            /><br />
+          </div>
           <label for="city">City</label><br />
-          <input
-            type="text"
-            id="city"
-            name="ship-city"
-            placeholder="Your city"
-            autocomplete="shipping locality"
-          /><br />
-          <label for="country">Country</label><br />
-          <select id="country" name="ship-country">
-            <option value="Spain">Spain</option>
-            <option value="France">France</option>
-            <option value="Portugal">Portugal</option>
-            <option value="Greece">Greece</option>
-          </select>
-          <label for="postal-code">Postal code</label>
-          <input
-            type="text"
-            id="postal-code"
-            name="ship-postal-code"
-            placeholder="Your postal code"
-            autocomplete="shipping postal-code"
-          />
-          <input type="checkbox" id="save-info" name="save-info" /><br />
-          <label for="save-info">Save this information for next time</label
+          <div class="form-input">
+            <img src="./svg/buildings.svg" alt="building skyline" class="input-icon">
+            <input
+              class="textbox"
+              type="text"
+              id="city"
+              name="ship-city"
+              placeholder="Your city"
+              autocomplete="shipping locality"
+            /><br />
+          </div>
+          <div class="form-row">
+            <label for="country">Country</label><br />
+            <div class="form-input">
+              <img src="./svg/worldwide.svg" alt="world icon" class="input-icon">
+              <select
+                class="textbox" 
+                id="country" name="ship-country">
+                <option value="Spain">Spain</option>
+                <option value="France">France</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Greece">Greece</option>
+              </select>
+            </div>
+            <label for="postal-code">Postal code</label>
+            <div class="form-input">
+              <img src="./svg/mailbox.svg" alt="mailbox icon" class="input-icon">
+              <input
+                class="textbox"
+                type="text"
+                id="postal-code"
+                name="ship-postal-code"
+                placeholder="Your postal code"
+                autocomplete="shipping postal-code"
+              />
+            </div>
+            </div>
+          <div class="wrap-checkbox">
+            <input class="checkbox" type="checkbox" id="save-info" name="save-info" />
+          <label class="save-info" for="save-info">Save this information for next time</label
           ><br />
         </form>
+          </div>
         </div>
-        <button>Continue</button>
+        <div class="button-wrapper">
+          <button class="continue">Continue</button>
+        </div>
       </div>
       <div class="summary">
         <div class="item1">
           <img
             src="photo1.png"
-            alt="Green vintage backpack with brown leather details."
-          />
-          <p>Vintage Backpack</p>
-          <p>$54.99 <strike>$94.99</strike></p>
+            alt="Green vintage backpack with brown leather details."/>
+            <div class="info-item1">
+              <p>Vintage Backpack</p>
+          <p class="price">$54.99 <strike>$94.99</strike></p>
           <form>
-            <label for="quantity"></label>
-            <input
-              type="number"
-              id="quantity"
-              name="quantity"
-              min="1"
-              max="5"
-              value="1"
-            />
+            <div class="amount-wrapper">
+              <button class="plus-btn">+</button>
+              <p class="quantity">1</p>
+              <button class="minus-btn">-</button>
+            </div>
           </form>
+            </div>
         </div>
+        <br>
         <div class="item2">
           <img src="photo2.png" alt="Denim shoes with brown sole." />
-          <p>Levi Shoes</p>
-          <p>$74.99 <strike>$124.99</strike></p>
+          <div class="info-item2">
+            <p>Levi Shoes</p>
+            <p class="price">$74.99 <strike>$124.99</strike></p>
           <form>
-            <label for="quantity"></label>
-            <input
-              type="number"
-              id="quantity"
-              name="quantity"
-              min="1"
-              max="5"
-              value="1"
-            />
+            <div class="amount-wrapper">
+              <button class="plus-btn">+</button>
+              <p class="quantity">1</p>
+              <button class="minus-btn">-</button>
+            </div>
           </form>
-          <hr />
+          </div>
         </div>
         <div class="shopping-summary">
-          <table>
-            <tbody>
-              <tr>
-                <td>Shipping</td><br>
-                <td>$19</td>
-              </tr>
-              <hr>
-              <tr>
-                <td>Total</td><br>
-                <td>$148.98</td>
-              </tr>
-            </tbody>
-        </table>
+          <div class="shipping-costs">
+            <p>Shipping</p>
+            <p>$19</p>
+          </div>
+          <div class="total">
+            <p>Total</p>
+            <p>$148.98</p>
+          </div>
         </div>
         
       </div>
     </div>
+    <footer>
+      Cristina Chaparro @ DevChallenges.io
+      <br> 
+      Icons made by <a href="https://www.flaticon.com/authors/free">FlatIcon</a> 
+    </footer>
   </body>
-  <footer>Cristina Chaparro @ DevChallenges.io</footer>
 </html>
