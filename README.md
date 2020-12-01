@@ -36,7 +36,8 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+<img src="screenshot_webview.png"></img>
+<img src="screenshot_phoneview.png"></img>
 
 I chose this project because I think it's very useful to know how to build a checkout site nowadays. It's one of the type of sites we see and use the most, and almost every website that offers a service has one. Therefore, I think it could be very useful for me to learn how to create one. The next step will be learning how to add JS to it so that it works properly! But that's for another project.
 
